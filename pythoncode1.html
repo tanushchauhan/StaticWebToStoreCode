@@ -185,8 +185,91 @@ print("Congrasulation you entered a number Greater than 100!!")</pre>
 <p class="sectionSubTagtext-small">7. Guess the number game!</p>
 <button onclick="copyToClipboard7()" id="mbtn7" class = "btn7" >Copy</button>
 <br>
-        <br>
-        <br>
+<br>
+<br>
+<pre id="p7" class="prettyprint">
+import random
+n = random.randint(0, 100)
+i = 9
+print("\nWelcome to the Game\n")
+print("Rules:\n")
+print("There is a number stored. Try to guess it. Don't look at the code because it is not here. It would be random.\nThere are limited number of guesses.You can see the number below\nEach time you will be told The guess is greater or smaller.\nThe number will be between 0 and 100.It could Be 0 or 100 also. \nDon't Cheat or edit the code.\nBest of luck :) ")
+print("\nGuesses left =",i)
+while(True):
         
+        
+        try: 
+            var = int(input("Enter your guess:\n"))
+            i = i - 1
+        except:
+            continue
+        if var == n:
+            print("\nYou Won the Game :)")
+            print("Want to play again? Yes(1) No (2):")
+            try:  
+                    ch = int(input())
+            except:
+                    print("You Entered a wrong character and the game ia stoping.\nIf you want to play again then run the file again.\nBye  ")
+                    break
+            if ch == 1:
+                i = 9
+                n = random.randint(0, 100)
+    
+                print("\nGuesses left = 9\n")
+                
+                continue
+            elif ch == 2:
+                print("\nSee You Soon in a new code Good Bye\n")
+                break
+            else:
+                break
+        elif var == 4181:
+            print("\n\nScreat code \ngusesess left = 9")
+            i = 9
+            
+            continue
+        elif var == 17626029:
+            
+            print("\n"+str(n)+"\n")
+            int(n)
+            print("Make number smaller")
+            print("guesses left =",i)
+            continue
+        elif i == 0:
+                print("\nWrong\nGuesses over you lost :(\nThe correct Number was",n)
+                print("Want to play again? Yes(1) No (2):")
+                try:  
+                    ch = int(input())
+                except:
+                    break
+                if ch == 1:
+                    
+                    n = random.randint(0, 100)
+                    i = 9
+                    print("\nGuesses left = 9\n")
+                    continue
+                elif ch == 2:
+                        print("\nSee You Soon in a new code Good Bye\n")
+                        break
+                else:
+                        break
+        else:
+            
+            if var>n:
+                print("\n\nMake nuber smaller")
+            
+                print("guesses left = ", i)
+            elif var < n:
+                print("\n\nMake nuber bigger")
+            
+                print("guesses left = ", i)
+            
+            else:
+                True
+    
+print("Made By Tanush Chauhan :)")
+#screat code is 4181 try it!
+#one more screat code is 17626029 try it !</pre>
+      <br><br>
   </body>
 </html>
