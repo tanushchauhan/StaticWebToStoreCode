@@ -202,5 +202,88 @@ elif q == "w":
             else:
                 True
             print("Do You Want to play again ? Yes(1) , No(2) :")
+            z = input()
+                if z == "1":
+                    i = 0
+                    r = 1
+                    p = 0
+                    c = 0
+                    continue
+                elif z == "2":
+                    break
+                else:
+                    print("You entered a wrong Charecter Game ending...")
+                    break
+            else:
+                continue
+        elif a == "Water":
+            print("Draw. The Computers choice was" ,a)
+            
+            
+            a = random.choice(lst)
+            if i >9:
+                print("\n\nYour Win(s) =" , p)
+                print("Comuter's Win(s) =" , c)
+                if p>c:
+                    print("Overall Winner : Player(You)")
+                elif p < c:
+                    print("Overall Winner : Computer")
+                elif p == c:
+                    print("Overall Winner : The Game has Draw")
+                else:
+                    True
+                print("Do You Want to play again ? Yes(1) , No(2) :")
+                z = input()
+                if z == "1":
+                    i = 0
+                    r = 1
+                    p = 0
+                    c = 0
+                    continue
+                elif z == "2":
+                    break
+                else:
+                    print("You entered a wrong Charecter Game ending...")
+                    break
+            else:
+                continue
+        else:
+            True
+    elif q == "g":
+        if a == "Snake":
+            print("You Won :). The Computers choice was" ,a)
+            p = p+1
+            a = random.choice(lst)
+            if i>9:
+                print("\n\nYour Win(s) =" , p)
+                print("Comuter's Win(s) =" , c)
+                if p>c:
+                    print("Overall Winner : Player(You)")
+                elif p < c:
+                    print("Overall Winner : Computer")
+                elif p == c:
+                    print("Overall Winner : The Game has Draw")
+                else:
+                    True
+                print("Do You Want to play again ? Yes(1) , No(2) :")
+                z = input()
+                if z == "1":
+                    i = 0
+                    r = 1
+                    p = 0
+                    c = 0
+                    continue
+                elif z == "2":
+                    break
+                else:
+                    print("You entered a wrong Charecter Game ending...")
+                    break
+            else:
+                continue
+        elif a == "Water":
+            print("Sorry You Lost :( .The computers choice was",a)
+            c = c+1
+            a = random.choice(lst)
+            if i>9:
   </body>
 </html>
