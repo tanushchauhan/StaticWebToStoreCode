@@ -626,5 +626,52 @@ while (True):
 #Pin For Dammd : 5740
 #Admin Pin : 34567</pre>
       <br><br>
+      <p class="sectionSubTagtext-small">10. Calender Printer</p>
+            <button onclick="copyToClipboard10()" id="mbtn10" class = "btn10" >Copy</button>
+            <br>
+                <br>
+                <br>
+<pre id="p10" class="prettyprint">import calendar 
+print("\nCalender Programme\n  ")
+print("Do you want to Print Calender for Just 1 mounth(1) or Whole Year(2) ?? :")
+d = int(input())
+if d == 1:
+
+    y = int(input("Enter the Year :\n "))
+    m = int(input("Enter the month :\n "))
+
+    c = calendar.month(y , m)
+    print("\n"+c+"\n")
+
+elif d == 2:
+    y = int(input("Enter the Year : "))
+    i = 0
+    while (i < 12):
+        i = i+1
+        c = calendar.month(y ,i )
+        print("\n"+c+"\n")
+print("Thank You For Using")</pre>
+    <br><p class="lklk">~~~~End~~~~</p><br><br><br>
+    <a class="btn2" href="code.html">Go Back ?</a>
+    </div>
+        
+    </section>
+    <footer class="background">
+        <p class="text-footer">
+            Copyright © 2024
+        </p>
+    </footer>
+    <script src="js/resp.js"></script>
+    <script src="js/copy.js"></script>
+</body>
+</html>
+<!-- 
+<p class="sectionSubTagtext-small">Name of project</p>
+                
+                <button onclick="copyToClipboard2()" id="mbtn2" class = "btn2" >Copy</button>
+                <br>
+                <br>
+                <br>
+                <pre id="p2" class = "prettyprint">code please</pre> -->
   </body>
 </html>
