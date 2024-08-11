@@ -41,5 +41,88 @@
                 <br>
                 <br>
                 <pre id="p1" class = "prettyprint">#Snake water gun game by Tanush Chauhan
+import random
+print("Welcome to Game")
+print("\nRules\nThe computer's choice would be random\nYou have to enter your choice.\nThere will be 10 rounds.\nIf you win in more rounds than computer then you wil win else computer will win.\nBest of luck :).")
+
+lst = [ "Snake" , "Water" , "Gun"]
+
+i = 0
+r = 1
+c = 0
+p = 0
+while (i < 10):
+    a = random.choice(lst)
+    i = i+1
+    
+    
+    print("\n\nRound",r)
+    r = r+1
+    print("Please Enter You Choice Snake(s), Gun(g) or Water (w)")
+    q = input()
+    if q == "s":
+        if a == "Snake":
+            print("Draw. The Computers choice was" ,a)
+            
+            
+            a = random.choice(lst)
+            if i >9:
+                print("\n\nYour Win(s) =" , p)
+                print("Comuter's Win(s) =" , c)
+                if p>c:
+                    print("Overall Winner : Player(You)")
+                elif p < c:
+                    print("Overall Winner : Computer")
+                elif p == c:
+                    print("Overall Winner : The Game has Draw")
+                else:
+                    True
+                print("Do You Want to play again ? Yes(1) , No(2) :")
+                z = input()
+                if z == "1":
+                    i = 0
+                    r = 1
+                    p = 0
+                    c = 0
+                    continue
+                elif z == "2":
+                    break
+                else:
+                    print("You entered a wrong Charecter Game ending...")
+                    break
+            else:
+                continue
+        elif a == "Water":
+            print("You Won :). The Computers choice was" ,a)
+            
+            p = p+1
+            a = random.choice(lst)
+            if i>9:
+                print("\n\nYour Win(s) =" , p)
+                print("Comuter's Win(s) =" , c)
+                if p>c:
+                    print("Overall Winner : Player(You)")
+                elif p < c:
+                    print("Overall Winner : Computer")
+                elif p == c:
+                    print("Overall Winner : The Game has Draw")
+                else:
+                    True
+                print("Do You Want to play again ? Yes(1) , No(2) :")
+                z = input()
+                if z == "1":
+                    i = 0
+                    r = 1
+                    p = 0
+                    c = 0
+                    continue
+                elif z == "2":
+                    break
+                else:
+                    print("You entered a wrong Charecter Game ending...")
+                    break
+            else:
+                continue
+        elif a == "Gun":
   </body>
 </html>
