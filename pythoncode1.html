@@ -442,6 +442,98 @@ while (True):
                   
                   
                       print("Which data you want to enter food(1) or exerise(2) ? :")
+                      rp3 = int(input())
+                        if rp3 == 1:
+                            print("Please Enter The Data : ")
+                            datahf = input()
+                            with open("hammdfood.txt" , "a") as fhf:
+                                fhf.write(str([str(gettime())])+": "+datahf+"\n")
+                                print("\nSucessfully Added the data")
+                                print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        elif rp3 == 2:
+                            print("Please Enter The Data : ")
+                            datahf = input()
+                            with open("hammdex.txt" , "a") as fhf:
+                                fhf.write(str([str(gettime())])+": "+datahf+"\n")
+                                print("\nSucessfully Added the data")
+                                print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        else:
+                            True
+                    else:
+                        print("\nWrong pin")
+                        print("\nDo you want to continue(1) or exit(2) ? :")
+                        rp64 = int(input())    
+                                
+                        if rp64 == 1:
+                                    continue
+                                
+                        elif rp64 == 2:
+                                    print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                    break
+                        else:
+                                    True
+
+                else:
+                    True
+            elif rp == 2:
+                print("As you are accessing sensitive data of clients please enter the admin pin ")
+                passs2 = int(input())
+                if passs2 == 34567:
+                    print("Correct pin \n")
+
+                    print("For Whom you want to resive data Harry(1) , Rohan(2) , Hammd(3) ? :")
+                    rp2 = int(input())
+                    if rp2 == 1:
+                        print("What do you want to recive Food data(1) or Exercise data(2) ? :")
+                        rp3 = int(input())
+                        if rp3 == 1:
+                            with open("harryfood.txt" , "r") as fhf:
+                                datahf = fhf.read()
+                                print("The Whole Data is :\n")
+                                print(datahf)
+                            print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        elif rp3 == 2:
+                            with open("harryex.txt" , "r") as fhf:
+                                datahf = fhf.read()
+                                print("The Whole Data is :\n")
+                                print(datahf)
+                            print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        else:
+                            True
+                    elif rp2 == 2:
+                    
       <br><br>
   </body>
 </html>
