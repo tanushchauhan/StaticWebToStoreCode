@@ -356,5 +356,77 @@ print("\nThank You For Using Made By Tanush Chauhan :)")</pre>
             <br>
             <br>
             <pre id="p2" class = "prettyprint">
+# importing modules
+from pygame import mixer #pip install pygame
+from datetime import datetime
+import time
+
+#All Fuctions
+
+def playmusic(file, stopper):
+    mixer.init()
+    mixer.music.load(file)
+    mixer.music.play()
+    while True:
+        input_of_user = input()
+        if input_of_user == stopper:
+            mixer.music.stop()
+            break
+
+def checktime():
+    x = time.strftime('%H%M')
+    if x > '0859' and x < '1701':
+        return True
+    else:
+        return False
+
+def log(messege):
+    with open("logs.txt", "a") as f:
+        f.write(f"{datetime.now()} : {messege} \n")
+
+# To Check if Office has started or not
+if checktime():
+
+
+    #Variable defined
+    waterstarting = time()
+    eyesstarting = time()
+    physicalstarting = time()
+    watertime = 1200
+    physicaltime = 1800
+    eyestime = 2700
+    timeforsleep = 60 # the programme will check after every 1 minute
+
+    #Main Logic
+
+    while True:
+            if checktime(): #To Check If office is over or not
+                if time() - waterstarting > watertime:
+                    print("Water Drinking time. Enter 'drank' to stop the alarm.")
+                    playmusic('water.mp3', 'drank')
+                    waterstarting = time()
+                    log("Drank Water")
+
+                if time() - eyesstarting >eyestime:
+                    print("Eye exercise time. Enter 'doneeyes' to stop the alarm.")
+                    playmusic('eyes.mp3', 'doneeyes')
+                    eyesstarting = time()
+                    log("Eyes Relaxed at")
+
+                if time() - physicalstarting > physicaltime:
+                    print("Physical Activity Time. Enter 'donephy' to stop the alarm.")
+                    playmusic('physical.mp3', 'donephy')
+                    physicalstarting = time()
+                    log("Physical Activity done at")
+                time.sleep(timeforsleep) # the programme will check after every 1 minute
+            else:
+                print("I think your office is over now have a good day :)")
+else:
+    print("I don't Think its Office time Enjoy :)")</pre>
+<br><br>    
+<p class="sectionSubTagtext-small">3. Lcm/Hcf Calculator</p>
+                
+<button onclick="copyToClipboard3()" id="mbtn3" class = "btn3" >Copy</button>
+<br>
   </body>
 </html>
