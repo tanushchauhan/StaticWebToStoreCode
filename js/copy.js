@@ -93,3 +93,27 @@ function copyToClipboard8() {
   var tooltip = document.getElementById("mbtn8");
   tooltip.innerHTML = "Copied!";
 }
+
+function copyToClipboard9() {
+  const copyText = document.getElementById("p9").textContent;
+  const textArea = document.createElement("textarea");
+  textArea.textContent = copyText;
+  document.body.append(textArea);
+  textArea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textArea);
+  var tooltip = document.getElementById("mbtn9");
+  tooltip.innerHTML = "Copied!";
+}
+
+function copyToClipboard10() {
+  const copyText = document.getElementById("p10").textContent;
+  const textArea = document.createElement("textarea");
+  textArea.textContent = copyText;
+  document.body.append(textArea);
+  textArea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textArea);
+  var tooltip = document.getElementById("mbtn10");
+  tooltip.innerHTML = "Copied!";
+}
