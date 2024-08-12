@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/pythoncodereponsive.css" />
+    <link rel="stylesheet" href="css/copy.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Python Codes Set 2</title>
+    <title>Python Codes Set 1</title>
   </head>
   <body>
     <nav class="navbar background h-nav-resp">
@@ -29,18 +30,19 @@
       </div>
     </nav>
     <section class="section">
-        <div class="paras">
-            <br><br>
-            <p class="sectionTagtext-big">Python Codes Set 2</p>
-            <p class="sectionSubTag text-small">
-                <br><br>
-                <p class="sectionSubTagtext-small">1. Snke Water Gun Game !</p>
-                
-                <button onclick="copyToClipboard()" id="mbtn" class = "btn1" >Copy</button>
-                <br>
-                <br>
-                <br>
-                <pre id="p1" class = "prettyprint">#Snake water gun game by Tanush Chauhan
+      <div class="paras">
+        <br /><br />
+        <p class="sectionTagtext-big">Python Codes Set 2</p>
+        <p class="sectionSubTag text-small"><br /><br /></p>
+
+        <p class="sectionSubTagtext-small">1. Snke Water Gun Game !</p>
+
+        <button onclick="copyToClipboard()" id="mbtn" class="btn1">Copy</button>
+        <br />
+        <br />
+        <br />
+        <pre id="p1" class="prettyprint">
+#Snake water gun game by Tanush Chauhan
 import random
 print("Welcome to Game")
 print("\nRules\nThe computer's choice would be random\nYou have to enter your choice.\nThere will be 10 rounds.\nIf you win in more rounds than computer then you wil win else computer will win.\nBest of luck :).")
@@ -124,85 +126,85 @@ while (i < 10):
             else:
                 continue
         elif a == "Gun":
-        print("Sorry You Lost :( .The computers choice was",a)
-        c = c+1
-        a = random.choice(lst)
-        if i>9:
-            print("\n\nYour Win(s) =" , p)
-            print("Comuter's Win(s) =" , c)
-            if p>c:
-                print("Overall Winner : Player(You)")
-            elif p < c:
-                print("Overall Winner : Computer")
-            elif p == c:
-                print("Overall Winner : The Game has Draw")
+            print("Sorry You Lost :( .The computers choice was",a)
+            c = c+1
+            a = random.choice(lst)
+            if i>9:
+                print("\n\nYour Win(s) =" , p)
+                print("Comuter's Win(s) =" , c)
+                if p>c:
+                    print("Overall Winner : Player(You)")
+                elif p < c:
+                    print("Overall Winner : Computer")
+                elif p == c:
+                    print("Overall Winner : The Game has Draw")
+                else:
+                    True
+                print("Do You Want to play again ? Yes(1) , No(2) :")
+                z = input()
+                if z == "1":
+                    i = 0
+                    r = 1
+                    p = 0
+                    c = 0
+                    continue
+                elif z == "2":
+                    break
+                else:
+                    print("You entered a wrong Charecter Game ending...")
+                    break
             else:
-                True
-            print("Do You Want to play again ? Yes(1) , No(2) :")
-            z = input()
-            if z == "1":
-                i = 0
-                r = 1
-                p = 0
-                c = 0
                 continue
-            elif z == "2":
-                break
-            else:
-                print("You entered a wrong Charecter Game ending...")
-                break
         else:
-            continue
-    else:
-        True
-elif q == "w":
-    if a == "Snake":
-        print("Sorry You Lost :( .The computers choice was",a)
-        c = c+1
-        a = random.choice(lst)
-        if i>9:
-            print("\n\nYour Win(s) =" , p)
-            print("Comuter's Win(s) =" , c)
-            if p>c:
-                print("Overall Winner : Player(You)")
-            elif p < c:
-                print("Overall Winner : Computer")
-            elif p == c:
-                print("Overall Winner : The Game has Draw")
+            True
+    elif q == "w":
+        if a == "Snake":
+            print("Sorry You Lost :( .The computers choice was",a)
+            c = c+1
+            a = random.choice(lst)
+            if i>9:
+                print("\n\nYour Win(s) =" , p)
+                print("Comuter's Win(s) =" , c)
+                if p>c:
+                    print("Overall Winner : Player(You)")
+                elif p < c:
+                    print("Overall Winner : Computer")
+                elif p == c:
+                    print("Overall Winner : The Game has Draw")
+                else:
+                    True
+                print("Do You Want to play again ? Yes(1) , No(2) :")
+                z = input()
+                if z == "1":
+                    i = 0
+                    r = 1
+                    p = 0
+                    c = 0
+                    continue
+                elif z == "2":
+                    break
+                else:
+                    print("You entered a wrong Charecter Game ending...")
+                    break
             else:
-                True
-            print("Do You Want to play again ? Yes(1) , No(2) :")
-            z = input()
-            if z == "1":
-                i = 0
-                r = 1
-                p = 0
-                c = 0
                 continue
-            elif z == "2":
-                break
-            else:
-                print("You entered a wrong Charecter Game ending...")
-                break
-        else:
-            continue
-    elif a == "Gun":
-        print("You Won :). The Computers choice was" ,a)
-        p = p+1
-        a = random.choice(lst)
-        if i>9:
-            print("\n\nYour Win(s) =" , p)
-            print("Comuter's Win(s) =" , c)
-            if p>c:
-                print("Overall Winner : Player(You)")
-            elif p < c:
-                print("Overall Winner : Computer")
-            elif p == c:
-                print("Overall Winner : The Game has Draw")
-            else:
-                True
-            print("Do You Want to play again ? Yes(1) , No(2) :")
-            z = input()
+        elif a == "Gun":
+            print("You Won :). The Computers choice was" ,a)
+            p = p+1
+            a = random.choice(lst)
+            if i>9:
+                print("\n\nYour Win(s) =" , p)
+                print("Comuter's Win(s) =" , c)
+                if p>c:
+                    print("Overall Winner : Player(You)")
+                elif p < c:
+                    print("Overall Winner : Computer")
+                elif p == c:
+                    print("Overall Winner : The Game has Draw")
+                else:
+                    True
+                print("Do You Want to play again ? Yes(1) , No(2) :")
+                z = input()
                 if z == "1":
                     i = 0
                     r = 1
@@ -285,77 +287,80 @@ elif q == "w":
             c = c+1
             a = random.choice(lst)
             if i>9:
-            print("\n\nYour Win(s) =" , p)
-            print("Comuter's Win(s) =" , c)
-            if p>c:
-                print("Overall Winner : Player(You)")
-            elif p < c:
-                print("Overall Winner : Computer")
-            elif p == c:
-                print("Overall Winner : The Game has Draw")
+                print("\n\nYour Win(s) =" , p)
+                print("Comuter's Win(s) =" , c)
+                if p>c:
+                    print("Overall Winner : Player(You)")
+                elif p < c:
+                    print("Overall Winner : Computer")
+                elif p == c:
+                    print("Overall Winner : The Game has Draw")
+                else:
+                    True
+                print("Do You Want to play again ? Yes(1) , No(2) :")
+                z = input()
+                if z == "1":
+                    i = 0
+                    r = 1
+                    p = 0
+                    c = 0
+                    continue
+                elif z == "2":
+                    break
+                else:
+                    print("You entered a wrong Charecter Game ending...")
+                    break
             else:
-                True
-            print("Do You Want to play again ? Yes(1) , No(2) :")
-            z = input()
-            if z == "1":
-                i = 0
-                r = 1
-                p = 0
-                c = 0
                 continue
-            elif z == "2":
-                break
-            else:
-                print("You entered a wrong Charecter Game ending...")
-                break
-        else:
-            continue
-    elif a == "Gun":
-        print("Draw. The Computers choice was" ,a)
-        
-        
-        a = random.choice(lst)
-        if i >9:
-            print("\n\nYour Win(s) =" , p)
-            print("Comuter's Win(s) =" , c)
-            if p>c:
-                print("Overall Winner : Player(You)")
-            elif p < c:
-                print("Overall Winner : Computer")
-            elif p == c:
-                print("Overall Winner : The Game has Draw")
-            else:
-                True
-            print("Do You Want to play again ? Yes(1) , No(2) :")
-            z = input()
-            if z == "1":
-                i = 0
-                r = 1
-                p = 0
-                c = 0
-                continue
-            elif z == "2":
-                break
-            else:
-                print("You entered a wrong Charecter Game ending...")
-                break
-        else:
-            continue
-    else:
-        True
-else:
-    print("You entered wrong chacreter.Game ending")
-    break
-
-print("\nThank You For Using Made By Tanush Chauhan :)")</pre>
-<br><br>    
-<p class="sectionSubTagtext-small">2. Healthy Programmer</p>
+        elif a == "Gun":
+            print("Draw. The Computers choice was" ,a)
             
-            <button onclick="copyToClipboard2()" id="mbtn2" class = "btn2" >Copy</button>
-            <br>
-            <br>
-            <br>
-            <pre id="p2" class = "prettyprint">
+            
+            a = random.choice(lst)
+            if i >9:
+                print("\n\nYour Win(s) =" , p)
+                print("Comuter's Win(s) =" , c)
+                if p>c:
+                    print("Overall Winner : Player(You)")
+                elif p < c:
+                    print("Overall Winner : Computer")
+                elif p == c:
+                    print("Overall Winner : The Game has Draw")
+                else:
+                    True
+                print("Do You Want to play again ? Yes(1) , No(2) :")
+                z = input()
+                if z == "1":
+                    i = 0
+                    r = 1
+                    p = 0
+                    c = 0
+                    continue
+                elif z == "2":
+                    break
+                else:
+                    print("You entered a wrong Charecter Game ending...")
+                    break
+            else:
+                continue
+        else:
+            True
+    else:
+        print("You entered wrong chacreter.Game ending")
+        break
+    
+print("\nThank You For Using Made By Tanush Chauhan :)")</pre
+        >
+        <br /><br />
+        <p class="sectionSubTagtext-small">2. Healthy Programmer</p>
+
+        <button onclick="copyToClipboard2()" id="mbtn2" class="btn2">
+          Copy
+        </button>
+        <br />
+        <br />
+        <br />
+        <pre id="p2" class="prettyprint">
 # importing modules
 from pygame import mixer #pip install pygame
 from datetime import datetime
@@ -422,15 +427,18 @@ if checktime():
             else:
                 print("I think your office is over now have a good day :)")
 else:
-    print("I don't Think its Office time Enjoy :)")</pre>
-<br><br>    
-<p class="sectionSubTagtext-small">3. Lcm/Hcf Calculator</p>
-                
-<button onclick="copyToClipboard3()" id="mbtn3" class = "btn3" >Copy</button>
-<br>
-<br>
-<br>
-<pre id="p3" class = "prettyprint">
+    print("I don't Think its Office time Enjoy :)")</pre
+        >
+        <br /><br />
+        <p class="sectionSubTagtext-small">3. Lcm/Hcf Calculator</p>
+
+        <button onclick="copyToClipboard3()" id="mbtn3" class="btn3">
+          Copy
+        </button>
+        <br />
+        <br />
+        <br />
+        <pre id="p3" class="prettyprint">
 print("By Tanush Chauhan")
 while (True):
     print("Do you want Operration on 2 numbers(1) or 3 numbers(2)")
@@ -460,23 +468,21 @@ while (True):
     elif d == 2:
         break
     else:
-        continue</pre>
-    <br><p class="lklk">~~~~End~~~~</p><br><br><br>
-    
-    <a class="btn2" href="code.html">Go Back ?</a>
-    
-    </div>
-    
-        
+        continue</pre
+        >
+        <br />
+        <p class="lklk">~~~~End~~~~</p>
+        <br /><br /><br />
+
+        <a class="btn2" href="code.html">Go Back ?</a>
+      </div>
     </section>
     <footer class="background">
-        <p class="text-footer">
-            Copyright © 2020 - jettech.ml - All rights reserved
-        </p>
+      <p class="text-footer">Copyright © 2024</p>
     </footer>
     <script src="js/resp.js"></script>
     <script src="js/copy.js"></script>
-</body>
+  </body>
 </html>
 <!-- 
 <p class="sectionSubTagtext-small">Name of project</p>
@@ -486,5 +492,3 @@ while (True):
                 <br>
                 <br>
                 <pre id="p2" class = "prettyprint">code please</pre> -->
-  </body>
-</html>
