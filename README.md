@@ -20,7 +20,7 @@ Open the index.html file in your favorite browser.
 
 ## Authors
 
-- [@tanushchauhan](https://www.github.com/octokatherine)
+- [@tanushchauhan](https://github.com/tanushchauhan/)
 
 ## Demo
 
